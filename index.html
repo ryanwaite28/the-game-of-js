@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to play JS! | A guide on understanding Programming and JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/bootstrap.css" />
+	  <link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/font-awesome.css" />
+	  <link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/emerald.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/javascript-logo.png">
+    <script src="https://ryanwaite28.github.io/my-cdn/js/jquery.js"></script>
+	  <script src="https://ryanwaite28.github.io/my-cdn/js/bootstrap.js"></script>
+	  <script src="https://ryanwaite28.github.io/my-cdn/js/emerald.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+
+    <nav id="page-nav">
+      <p id="nav-label"><a title="GitHub Page - The Game of JS" href="https://github.com/ryanwaite28/the-game-of-js">JS Guide</a></p>
+    </nav>
+
+    <div id="page-body">
+      <header id="page-header" class="fill">
+        <div class="dim"></div>
+        <div class="pos-rel">
+          <h1><strong>How to play JS!</strong></h1>
+          <p>A guide on understanding JavaScript and Programming</p>
+          <div class="spacer-1"></div>
+          <img class="polaroid transition" src="img/javascript-logo.png" title="JavaScript Logo" alt="JavaScript Logo">
+        </div>
+      </header>
+
+      <section id="page-main">
+
+        <section id="introductions" class="content-box">
+          <h2 class="text-center">
+            There is a saying that goes:
+          </h2>
+          <blockquote>
+            <p><em class="grey-text">You can't win a game you don't know how to play...</em></p>
+          </blockquote>
+          <br/>
+          <p class="text-center">
+            The purpose of this page is to teach the rules of
+            JavaScript, and in some cases programming in general,
+            so one can feel confident reading and writing code! Follow these rules
+            and you will be coding with confidence like an expert! The best way to learn is practice
+            and just doing it for a long time.
+          </p>
+
+          <p class="text-center">
+            The console in the developer tools is a great place to play around with code.
+            Google Chrome is recommended for learning web development.
+          </p>
+
+          <p class="text-center">
+            One cannot be expected to know everything about programming but rather understand the foundation of programming, because all other aspects stems from the foundation.
+            If you ever need to find an answer to how a language works, read its documentation.
+            For JavaScript, the official documentation is here: <br/><a title="Official JavaScript Documentation" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a>
+          </p>
+
+          <p class="text-center">
+            The rules below are in no particular order.
+          </p>
+        </section>
+
+        <!-- <section id="table-of-contents" class="content-box">
+          <h2 class="text-center">
+            Table of Contents
+          </h2>
+          <hr/>
+          <br/>
+        </section> -->
+
+        <br/><br/>
+
+        <section id="rules" class="content-box">
+          <h2 class="text-center">
+            The Rules
+          </h2>
+        </section>
+
+        <section>
+          <ul id="rules-list">
+            <li>
+              <div class="rule-container">
+                <h3>Everything is an object</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Working with objects" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">Working with objects</a></p>
+                  <br/>
+                  <p>
+                    In object-oriented programming, an object is simply a data structure.
+                    Data structures are used for holding, organizing, and manipulating data/information.
+                    Essentially, objects have <strong>state</strong> and <strong>behavior</strong>.
+                    Objects have a collection of information associated with it, which are known as <strong>properties</strong>.
+                    When a <strong>property</strong> is a behavior(a.k.a function), it is called a <strong>method</strong>.
+                  </p>
+                  <p>
+                    The <strong>state</strong> is the current information an object holds.
+                  </p>
+                  <p>
+                    The <strong>behavior</strong> are the methods that an object can perform.
+                  </p>
+                  <p>
+                    The <strong>methods</strong> are often, if not all the time, defined to <strong>access/manipulate/modify the state</strong> of the object.
+                  </p>
+                  <p>
+                    Here is an analogy: a phone is an object; it has state and behavior.
+                    For example, some of the state a phone can have is it's color, model, carrier, size, brand, etc.
+                    Phones can also do things, like call and text.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Properties are accessed with dot-notation or bracket-notation</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Property access" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors">Property access</a></p>
+                  <br/>
+                  <p>
+                    You can access an object's property by using the dot notation or the bracket notation. For Example:
+                  </p>
+                  <pre class="well">
+                    objectName.propertyName
+                    // or
+                    objectName['propertyName']
+                  </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>There are different types of objects and data</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Data Types" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">Data Types</a></p>
+                  <br/>
+                  <p>
+                    Everything in JavaScript is an object, however there are different <strong><em>types</em></strong> of objects to represent different types of information.
+                    For example, letters are different than numbers and numbers are different than dates.
+                    Although there may be different types of objects, they all work the same due to being based on the same foundation; they have state and behavior.
+                  </p>
+                  <p>
+                    There are built-in object types, such as object literal, arrays, and dates. You can also define your own types of objects!
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>There are primitives</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Primitive" href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">Primitive</a></p>
+                  <br/>
+                  <p>
+                    There are things in programming called <strong>primitives</strong>.
+                    A primitive is data that is not an object and has no state/behavior; they are incapable of being changed.
+                    For example, there is a primitive called <strong>Boolean</strong>.
+                    A boolean is like a switch, it can only be 1 of 2 values: yes or no, on or off.
+                    In programming, the two Boolean values are <strong>true</strong> or <strong>false</strong>.
+                    True will always be true and false will always be false.
+                    Numbers are primitives too: 1 will always be 1 and 2 will always be 2.
+                    There is nothing that can change that.
+                  </p>
+                  <p>
+                    This somewhat hinders the learning and understanding of objects in programming(JS in particular)
+                    because <em>everything</em> is considered an object, including numbers, but number are also considered a primitive, which cannot change.
+                    The reason JS also considers a number an object is because there is something specific to that language, called <strong>constructor function</strong>.
+                    Basically, there is a wrapper on top of primitives that allows them to work like objects, having state and behavior.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Variables store information</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Variables" href="https://www.w3schools.com/js/js_variables.asp">Variables</a></p>
+                  <br/>
+                  <p>
+                    In programming, <strong>variables</strong> are use to hold a <em>reference</em> to data/information. Variables can store a reference to just about anything!
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Variables are defined with a keyword</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Declaring variables" href="https://www.w3schools.com/js/js_variables.asp">Declaring variables</a></p>
+                  <br/>
+                  <p>
+                    Variables are defined using a variable keyword, then giving a name, then optionally assigning a value.
+                    Variables are created by using one of the following keywords: <a title="var, let, or const" href="https://dzone.com/articles/javascript-difference-between-var-let-and-const-ke">var, let, or const</a>.
+                    For example:
+                  </p>
+                  <pre class="well">
+                    var name = 'Ryan';
+                    let age;
+                  </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Functions are defined with a keyword</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Declaring functions" href="https://www.w3schools.com/js/js_functions.asp">Declaring functions</a></p>
+                  <br/>
+                  <p>
+                    Functions are defined using the function keyword, then giving a name, followed by parenthesis, then adding a pair of curly braces for the function body.
+                    For example:
+                  </p>
+                  <pre class="well">
+                    function example() {
+
+                    }
+                  </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Functions can accept information as input and return information as output</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Function arguments/return" href="https://www.w3schools.com/js/js_functions.asp">Function arguments/return</a></p>
+                  <br/>
+                  <p>
+                    Functions are call "sub-programs" because they perform a specific task through a series of steps.
+                  </p>
+                  <pre class="well">
+                    function double_num(number) {
+                      return number * 2;
+                    }
+                  </pre>
+                  <p>
+                    Functions don't have to return anything when being defined. In that case, JavaScript will return <code>undefined</code> by default. So in theory, all functions will return <em>something</em>.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Functions can accept multiple information but only return 1 value</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Function arguments/return" href="https://www.w3schools.com/js/js_functions.asp">Function arguments/return</a></p>
+                  <br/>
+                  <p>
+                    Functions can accept many inputs, but only return 1 value.
+                    This is because the return keyword stops a function exection
+                    from continuing past where that return keyword was used. For Example
+                  </p>
+                  <pre class="well">
+                    function add(numberA, numberB) {
+                      return numberA + numberB;
+                    }
+                  </pre>
+                  <p>
+                    Functions don't have to return anything when being defined. In that case, JavaScript will return <code>undefined</code> by default. So in theory, all functions will return <em>something</em>.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Functions don't run until they are called</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Function call" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions">Function call</a></p>
+                  <p>
+                    In the above example, the <code>double_num</code> function was only <em>defined</em>, meaning it was created and designed on what it will do.
+                    It won't run until it gets <strong>called</strong>.
+                  </p>
+                  <p>
+                    To call a function, use its name followed by parenthesis. For example:
+                  </p>
+                  <pre class="well">
+                    double_num(2);
+                  </pre>
+                  <p>
+                    Notice the value in the parenthesis, it is an actual value.
+                    When the function <code>double_num</code> was defined, it was defined by accepting an input, called number.
+                    That is just a reference to a value that gets inputted to the function <em>when</em> it gets called.
+                  </p>
+                  <p>
+                    The returned value can also be stored in a variable at the time of it being defined. For Example:
+                  </p>
+                  <pre class="well">
+                    var numberFour = double_num(2);
+                  </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>You can chain/consolidate statements together</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Chaining" href="https://en.wikipedia.org/wiki/Method_chaining">Chaining</a></p>
+                  <br/>
+                  <p>
+                    Every time you call a variable, you get the value that it holds.
+                    Every time you call a function, you get what was returned.
+                    If you know the object being return, you can <em>chain</em> on a property or method call!
+                    jQuery does this heavily: For example:
+                  </p>
+                  <pre class="well">
+                    $('body').find('p').css('color', 'red');
+                  </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Code is read and interpreted from top to bottom, left to right</h3>
+                <div class="contents">
+                  <!-- <p class="ref-text">Reference: <a title="" href=""></a></p> -->
+                  <br/>
+                  <p>
+                    Code is read and interpreted from top to bottom, left to right. It is the same way one would read a book in the english language.
+                    A variable/function cannot be used if it has not been defined yet. The following would give a <code>ReferenceError</code>:
+                  </p>
+                  <pre class="well">
+                    console.log(name); // name does not exist yet
+                    let name = 'ryan';
+                  </pre>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </section>
+    </div>
+
+    <footer id="page-footer">
+
+    </footer>
+
+  </body>
+
+  <!--
+  New Rule Markup
+
+  <li>
+    <div class="rule-container">
+      <h3></h3>
+      <div class="contents">
+        <p class="ref-text">Reference: <a title="" href=""></a></p>
+        <br/>
+
+      </div>
+    </div>
+  </li>
+  -->
+
+</html>

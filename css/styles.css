@@ -1,0 +1,180 @@
+/* Tags */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #f2f2f2;
+}
+
+blockquote {
+  border-left: 3px solid black;
+  padding: 5px 15px;
+}
+
+p {
+  font-size: 1.15em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Nav */
+
+nav#page-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 1px 1px grey;
+  background: #fff;
+}
+
+nav#page-nav > p#nav-label {
+  margin: 0px 15px;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+  font-size: 1.75em;
+  font-weight: 400;
+
+}
+
+/* Body */
+
+div#page-body {
+  padding: 60px 0px;
+}
+
+
+/* Header */
+
+header#page-header {
+  padding: 20px;
+  text-align: center;
+  /* background: lightgrey; */
+  /* background-image: url('../img/code-wallpaper-1.png'); */
+  background-image: url('../img/life-cycle-codes.jpg');
+  color: #fff;
+  position: relative;
+}
+
+/* Header */
+
+section#page-main {
+  display: block;
+  margin: auto;
+  width: 925px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+ul#rules-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul#rules-list > li {
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin: 15px 0px;
+  border: 1px solid grey;
+  box-shadow: 0 1px 2px lightgrey;
+  position: relative;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: justify;
+}
+
+ul#rules-list > li > div.rule-container {
+
+}
+
+div.rule-container > h3 {
+  margin: 0px;
+  padding: 20px;
+  background: #323a45;
+  color: #f1f1f1;
+}
+
+div.rule-container > div.contents {
+  padding: 20px;
+}
+
+p.ref-text {
+  font-size: 1em;
+}
+
+pre.well p {
+  margin: 0px;
+}
+
+/* Footer */
+
+
+
+/* --- Common --- */
+
+div.spacer-1 {
+  padding: 20vh;
+}
+
+.dim {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  opacity: 0.75;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.polaroid {
+  width: 125px;
+  padding: 5px;
+  background: #f2f2f2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.polaroid:hover {
+  width: 200px;
+  padding: 3px;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+section.content-box {
+  padding: 5vh;
+  background: #fff;
+  margin: 15px 0px;
+  border: 1px solid grey;
+  box-shadow: 0px 1px 1px grey;
+}
+
+/* section.rule-box {
+  padding: 5vh;
+  background: #fff;
+  margin: 15px 0px;
+  border: 1px solid grey;
+  box-shadow: 0px 1px 1px grey;
+} */
