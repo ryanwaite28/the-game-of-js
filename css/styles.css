@@ -11,6 +11,10 @@ blockquote {
   padding: 5px 15px;
 }
 
+blockquote a {
+  font-size: 0.75em;
+}
+
 p {
   font-size: 1.15em;
 }

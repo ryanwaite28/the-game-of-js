@@ -167,7 +167,8 @@
                     created from. For example, imagine a blueprint for a house. Multiple
                     houses can be created using the same blueprint.
                     The different houses may have different furniture(information) in them
-                    but they all have/share the same structure(class).
+                    but they all have/share the same structure(class). A class can be created from another class,
+                    this is called <strong>"sub-class"</strong>. That sub-class will inherit all of the properties from it's "<strong>parent-class"</strong>.
                   </p>
                   <p>
                     A class outlines the properties(state and behavior) that an object will have.
@@ -181,7 +182,7 @@
               <div class="rule-container">
                 <h3>JavaScript is Prototype-Based</h3>
                 <div class="contents">
-                  <p class="ref-text">Reference: <a title="Prototype-Based" href="">Prototype-Based</a></p>
+                  <p class="ref-text">Reference: <a title="Prototype-Based" href="https://en.wikipedia.org/wiki/Prototype-based_programming">Prototype-Based</a> | <a title="Explanation" href="https://stackoverflow.com/questions/186244/what-does-it-mean-that-javascript-is-a-prototype-based-language">Explanation</a></p>
                   <br/>
                   <p>
                     In JavaScript, objects are not created from a class because
@@ -194,11 +195,12 @@
                     it cannot be assigned any more properties after being instantiated.
                   </p>
                   <p>
-
+                    In JavaScript, any object can have whatever properties a developer decides to give it;
+                    there is no required convention to follow and no requirement to have only what was defined in its prototype.
                   </p>
                   <p>
                     Because of the way JavaScript behaves, it is often referred to as
-                    a loosely-typed language.
+                    a loosely-typed/weak language.
                   </p>
                 </div>
               </div>
@@ -258,6 +260,30 @@
                     var name = 'Ryan';
                     let age;
                   </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Variables can be re-assigned a value</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Assignment" href="https://en.wikipedia.org/wiki/Assignment_(computer_science)">Assignment</a></p>
+                  <br/>
+                  <p>
+                    After a variable has been created, it can have a diferent value at a different time. For example:
+                  </p>
+                  <pre class="well">
+                    var name = 'Ryan';
+
+                    /// later ...
+
+                    name = 'something else';
+                  </pre>
+                  <p>
+                    Notice how there were no keywords involved with re-assigning a value.
+                    That is because the variable was already defined.
+                  </p>
                 </div>
               </div>
             </li>
@@ -374,6 +400,36 @@
 
             <li>
               <div class="rule-container">
+                <h3>Functions can call other functions</h3>
+                <div class="contents">
+                  <!-- <p class="ref-text">Reference: <a title="" href=""></a></p> -->
+                  <br/>
+                  <p>
+                    That is what makes programming, programming. Functions can call other functions.
+                    For example:
+                  </p>
+                  <pre class="well">
+                    function triple_num(num) {
+                      return num * 3;
+                    }
+
+                    function square_trippled_num(number) {
+                      var numberTrippled = triple_num(number);
+                      return numberTrippled * numberTrippled;
+                    }
+
+
+                    square_trippled_num(4); // 144
+                  </pre>
+                  <p>
+                    Notice how <strong>triple_num</strong> was being called within <strong>square_trippled_num</strong>.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
                 <h3>You can chain/consolidate statements together</h3>
                 <div class="contents">
                   <p class="ref-text">Reference: <a title="Chaining" href="https://en.wikipedia.org/wiki/Method_chaining">Chaining</a></p>
@@ -393,18 +449,64 @@
 
             <li>
               <div class="rule-container">
-                <h3>Code is read and interpreted from top to bottom, left to right</h3>
+                <h3>Code compilation</h3>
                 <div class="contents">
-                  <!-- <p class="ref-text">Reference: <a title="" href=""></a></p> -->
+                  <p class="ref-text">Reference: <a title="Code compilation" href="https://stackoverflow.com/questions/15395347/does-a-browser-truly-read-javascript-line-by-line-or-does-it-make-multiple-passe">Code compilation</a></p>
                   <br/>
                   <p>
-                    Code is read and interpreted from top to bottom, left to right. It is the same way one would read a book in the english language.
-                    A variable/function cannot be used if it has not been defined yet. The following would give a <code>ReferenceError</code>:
+                    Code is compiled and executed in a sequence. Code that doesn't execute in sequence causes an error.
+                    The following would give a <code>ReferenceError</code>:
                   </p>
                   <pre class="well">
                     console.log(name); // name does not exist yet
                     let name = 'ryan';
                   </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Declaration vs. Expression</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Declaration vs. Expression" href="https://stackoverflow.com/questions/1013385/what-is-the-difference-between-a-function-expression-vs-declaration-in-javascrip">Declaration vs. Expression</a></p>
+                  <br/>
+                  <p>
+                    Function declarations(functions created using the <code>function</code> keyword) and <code>var</code>iables are hoisted.
+                    Variables that are hoisted do not hoist their value, just the name/identifier.
+                    See the reference link for more info.
+                  </p>
+                  <blockquote>
+                    <p><em class="grey-text">
+                      In computer programming, a declaration is a language construct that specifies properties of an identifier:
+                      it declares what a word (identifier) "means".
+                    </em></p>
+                    <a title="Declaration" href="https://en.wikipedia.org/wiki/Declaration_(computer_programming)">Wikipedia - Declaration</a>
+                  </blockquote>
+                  <blockquote>
+                    <p><em class="grey-text">
+                      An expression in a programming language is a combination of one or more explicit values, constants, variables, operators,
+                      and functions that the programming language interprets (according to its particular rules of precedence and of association) and computes
+                      to produce ("to return", in a stateful environment) another value.
+                      This process, as for mathematical expressions, is called evaluation.
+                    </em></p>
+                    <a title="Expression" href="https://en.wikipedia.org/wiki/Expression_(computer_science)">Wikipedia - Expression</a>
+                  </blockquote>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>Synchronous vs Asynchronous</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Sync vs Async" href="https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean">Sync vs Async</a></p>
+                  <br/>
+                  <p>
+                    In programming, things happen in order and you wait for it to finish before moving on to another task; that is called <strong>synchronous</strong>.
+                    Tasks can happen outside of an order, that is called <strong>asynchronous</strong>.
+                    One cannot "wait" for an asynchronous because the order would have continued on when an asynchronous code is executed.
+                  </p>
                 </div>
               </div>
             </li>
