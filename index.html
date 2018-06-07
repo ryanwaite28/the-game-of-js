@@ -4,30 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to play JS! | A guide on understanding Programming and JavaScript</title>
-    <link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/bootstrap.css" />
-	  <link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/font-awesome.css" />
-	  <link rel="stylesheet" type="text/css" href="https://ryanwaite28.github.io/my-cdn/css/emerald.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	  <link rel="stylesheet" type="text/css" href="css/emerald.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/javascript-logo.png">
-    <script src="https://ryanwaite28.github.io/my-cdn/js/jquery.js"></script>
-	  <script src="https://ryanwaite28.github.io/my-cdn/js/bootstrap.js"></script>
-	  <script src="https://ryanwaite28.github.io/my-cdn/js/emerald.js"></script>
+    <script src="js/jquery.js"></script>
+	  <script src="js/bootstrap.js"></script>
+	  <script src="js/emerald.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
 
     <nav id="page-nav">
-      <p id="nav-label"><a title="GitHub Page - The Game of JS" href="https://github.com/ryanwaite28/the-game-of-js">JS Guide</a></p>
+      <img id="nav-js-logo" class="" src="img/javascript-logo.png" title="JavaScript Logo" alt="JavaScript Logo">
+      <p id="nav-label">
+        JS Guide |
+        <a title="GitHub Page - The Game of JS" href="https://github.com/ryanwaite28/the-game-of-js">GitHub</a>
+      </p>
     </nav>
 
     <div id="page-body">
-      <header id="page-header" class="fill">
+      <header id="page-header" class="">
         <div class="dim"></div>
         <div class="pos-rel">
+          <br/>
           <h1><strong>How to play JS!</strong></h1>
           <p>A guide on understanding JavaScript and Programming</p>
           <div class="spacer-1"></div>
-          <img class="polaroid transition" src="img/javascript-logo.png" title="JavaScript Logo" alt="JavaScript Logo">
         </div>
       </header>
 
@@ -79,6 +83,7 @@
           <h2 class="text-center">
             The Rules
           </h2>
+          <img class="polaroid transition middlr" src="img/javascript-logo.png" title="JavaScript Logo" alt="JavaScript Logo">
         </section>
 
         <section>
@@ -152,6 +157,55 @@
 
             <li>
               <div class="rule-container">
+                <h3>Objects are created from a Class</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Class" href="https://en.wikipedia.org/wiki/Class_(computer_programming)">Class</a></p>
+                  <br/>
+                  <p>
+                    In object-oriented programming, objects are created from a
+                    <code>class</code>. A class is a blueprint from with an object type is
+                    created from. For example, imagine a blueprint for a house. Multiple
+                    houses can be created using the same blueprint.
+                    The different houses may have different furniture(information) in them
+                    but they all have/share the same structure(class).
+                  </p>
+                  <p>
+                    A class outlines the properties(state and behavior) that an object will have.
+                    An object is an instances of a class.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>JavaScript is Prototype-Based</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Prototype-Based" href="">Prototype-Based</a></p>
+                  <br/>
+                  <p>
+                    In JavaScript, objects are not created from a class because
+                    JavaScript does not follow the class concept. Rather, in JavaScript,
+                    objects are created from something called a Prototype.
+                  </p>
+                  <p>
+                    In class based languages, objects cannot be <em>extended</em> after they are created.
+                    By extended, i mean they can only have the properties defined in its class;
+                    it cannot be assigned any more properties after being instantiated.
+                  </p>
+                  <p>
+
+                  </p>
+                  <p>
+                    Because of the way JavaScript behaves, it is often referred to as
+                    a loosely-typed language.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
                 <h3>There are primitives</h3>
                 <div class="contents">
                   <p class="ref-text">Reference: <a title="Primitive" href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">Primitive</a></p>
@@ -215,7 +269,7 @@
                   <p class="ref-text">Reference: <a title="Declaring functions" href="https://www.w3schools.com/js/js_functions.asp">Declaring functions</a></p>
                   <br/>
                   <p>
-                    Functions are defined using the function keyword, then giving a name, followed by parenthesis, then adding a pair of curly braces for the function body.
+                    Functions are defined using the <code>function</code> keyword, then giving a name, followed by parenthesis, then adding a pair of curly braces for the function body.
                     For example:
                   </p>
                   <pre class="well">
@@ -223,6 +277,23 @@
 
                     }
                   </pre>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="rule-container">
+                <h3>User-Defined variables cannot have the same name as a keyword</h3>
+                <div class="contents">
+                  <p class="ref-text">Reference: <a title="Keywords" href="">Keywords</a></p>
+                  <br/>
+                  <p>
+                    In programming, there are special words called <code>keywords</code> that are built into a language.
+                    They are reserved for certain functionalities of the language. That way, the language
+                    knows what to do when it sees it. For example, the <code>var</code> keyword is
+                    reserved for creating variables. If you were to create a variable with the name "var",
+                    the language would not know if you wanted to create a variabled or call the name of one.
+                  </p>
                 </div>
               </div>
             </li>
@@ -358,7 +429,9 @@
       <div class="contents">
         <p class="ref-text">Reference: <a title="" href=""></a></p>
         <br/>
+        <p>
 
+        </p>
       </div>
     </div>
   </li>

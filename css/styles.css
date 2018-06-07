@@ -39,7 +39,18 @@ nav#page-nav > p#nav-label {
   vertical-align: middle;
   font-size: 1.75em;
   font-weight: 400;
+}
 
+nav img#nav-js-logo {
+  float: left;
+  margin: 10px 20px;
+  width: 40px;
+  padding: 1px;
+  background: #f2f2f2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 10px;
 }
 
 /* Body */
@@ -59,6 +70,8 @@ header#page-header {
   background-image: url('../img/life-cycle-codes.jpg');
   color: #fff;
   position: relative;
+  background-repeat: repeat;
+  background-position: center center;
 }
 
 /* Header */
@@ -87,7 +100,6 @@ ul#rules-list > li {
   position: relative;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  text-align: justify;
 }
 
 ul#rules-list > li > div.rule-container {
@@ -99,6 +111,7 @@ div.rule-container > h3 {
   padding: 20px;
   background: #323a45;
   color: #f1f1f1;
+  letter-spacing: 1.5px;
 }
 
 div.rule-container > div.contents {
@@ -120,7 +133,7 @@ pre.well p {
 /* --- Common --- */
 
 div.spacer-1 {
-  padding: 20vh;
+  padding: 18vh;
 }
 
 .dim {
@@ -138,7 +151,6 @@ div.spacer-1 {
 }
 
 .polaroid {
-  width: 125px;
   padding: 5px;
   background: #f2f2f2;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
@@ -178,3 +190,11 @@ section.content-box {
   border: 1px solid grey;
   box-shadow: 0px 1px 1px grey;
 } */
+
+/* Media Queries */
+
+@media (max-width: 475px) {
+  nav#page-nav > p#nav-label {
+    font-size: 1.35em;
+  }
+}
